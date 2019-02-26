@@ -75,6 +75,10 @@ void mgos_ili9341_set_inverted(bool inverted);
 uint16_t mgos_ili9341_get_screenWidth();
 uint16_t mgos_ili9341_get_screenHeight();
 
+// CHEAT
+bool mgos_ili9341_spi_init();
+void ili9341_send_pixels(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint8_t *buf, uint32_t buflen);
+
 void mgos_ili9341_fillScreen();
 
 // Geometric shapes:
